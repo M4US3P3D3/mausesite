@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Aleatórias</title>
+</head>
+<body>
+
+<p id="frase"></p>
+
+<script>
+// Array de frases
+var frases = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    
+];
+
+// Escolhe uma frase aleatória
+var fraseEscolhida = frases[Math.floor(Math.random() * frases.length)];
+
+// Exibe a frase no elemento HTML com o id "frase"
+document.getElementById("frase").innerHTML = fraseEscolhida;
+</script>
+
+</body>
+</html>
